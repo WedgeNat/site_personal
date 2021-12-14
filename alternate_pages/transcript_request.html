@@ -5,8 +5,47 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Transcript Request</title>
+  <link href="style.css" rel="stylesheet">
 </head>
 <body>
   transcript request
+  <form action="/my-handling-form-page" method="post">
+    <!-- The action attribute defines the location (URL) where the form's collected data should be 
+      sent when it is submitted. The method attribute defines which HTTP method to send the data with 
+      (usually get or post). -->
+      <ul>
+        <li>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="user_name">
+        </li>
+        <li>
+          <label for="org">Ogranization:</label>
+          <input type="text" id="org" name="user_org">
+        </li>
+        <li>
+          <label for="reason">Reason for request:</label>
+          <input type="text" id="reason" name="user_reason">
+        </li>
+        <li>
+          <label for="mail">E-mail:</label>
+          <input type="email" id="mail" name="user_email">
+        </li>
+        <li>
+          <label for="msg">Message:</label>
+          <textarea id="msg" name="user_message"></textarea>
+        </li>
+        <li>
+          <label for="lccTrans"> Lansing Community College (LCC)</label>
+          <input type="checkbox" id="lccTrans" name="lccTrans">
+        </li>
+        <li>
+          <label for="lccTrans"> Michigan State Univeristy (MSU)</label>
+          <input type="checkbox" id="msuTrans" name="msuTrans">
+        </li>
+        <li class="button">
+          <button type="submit">Request Transcript</button>
+        </li>
+       </ul>
+  </form>
 </body>
 </html>
